@@ -1,0 +1,156 @@
+{
+  "_note": "Faza A: soul_2 (Soul 2.0) — najcenejši, za LJUDI/lifestyle/editorialne naslovnice. Faza B: nano_banana_pro za produktne in high-end. Pred množičnim generiranjem preveri kredite.",
+  "_phase_A_total_credits_estimated": "~22-30 KR za 11 slik (faza A)",
+  "images": [
+    {
+      "file": "blog-koliko-stane-stran.jpg",
+      "w": 1200,
+      "h": 675,
+      "alt": "Slovenski podjetnik za mizo z odprtim laptopom in zapiski",
+      "motif": "podjetnik 40-50 let, sediti za mizo z laptopom, naravna svetloba, urejeno notranje okolje",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "clanki/koliko-stane-spletna-stran-v-sloveniji.html"
+    },
+    {
+      "file": "blog-logotip.jpg",
+      "w": 1200,
+      "h": 675,
+      "alt": "Oblikovalec skicira logotip",
+      "motif": "oblikovalec za delovno mizo s skiciranjem, papirji, pisala",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "clanki/logotip-50-ali-500-eur-kaj-dobis.html"
+    },
+    {
+      "file": "blog-google-meta.jpg",
+      "w": 1200,
+      "h": 675,
+      "alt": "Telefon z družbenimi omrežji ob laptopu",
+      "motif": "moderna pisarna, telefon z Instagram/Google na ekranu, laptop",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "clanki/google-ali-meta-oglasi-kateri-so-pravi.html"
+    },
+    {
+      "file": "blog-oglas-ne-prodaja.jpg",
+      "w": 1200,
+      "h": 675,
+      "alt": "Frustrirani podjetnik pred ekranom",
+      "motif": "premišljevalna scena, oseba pred ekranom, soft warm light, brez negativne dramatičnosti",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "clanki/zakaj-vas-oglas-ne-prodaja.html"
+    },
+    {
+      "file": "blog-video-produkcija.jpg",
+      "w": 1200,
+      "h": 675,
+      "alt": "Sodobni studio z lučmi okrog produkta",
+      "motif": "minimalistični produktni studio, izdelek na podstavku, mehka svetloba",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "clanki/video-oglasi-brez-snemalne-ekipe.html"
+    },
+    {
+      "file": "blog-5-znakov.jpg",
+      "w": 1200,
+      "h": 675,
+      "alt": "Roka kaže na zaslon laptopa s spletno stranjo",
+      "motif": "podjetnik analizira spletno stran, blizu zaslona",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "clanki/5-znakov-da-spletna-stran-izgublja-stranke.html"
+    },
+    {
+      "file": "blog-cene-vodnik.jpg",
+      "w": 1200,
+      "h": 675,
+      "alt": "Beležke z izračuni za digitalni marketing",
+      "motif": "delovna miza s tabelami, kalkulatorjem, kavo",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "clanki/transparenten-vodnik-po-cenah-digitalnega-marketinga-2026.html"
+    },
+    {
+      "file": "blog-obrtnik.jpg",
+      "w": 1200,
+      "h": 675,
+      "alt": "Slovenski obrtnik (mizar) pri delu v delavnici",
+      "motif": "obrtnik srednjih let v delavnici, naravna svetloba, lesarski izdelek",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "clanki/obrtnik-brez-spletne-strani-zakaj-vas-ne-najdejo.html"
+    },
+    {
+      "file": "video-industry-1.jpg",
+      "w": 800,
+      "h": 600,
+      "alt": "Produktna fotografija oblačil",
+      "motif": "oblačila na modelu, studio, mehka svetloba",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "index.html (#sl/video, #en/video — reference)"
+    },
+    {
+      "file": "video-industry-2.jpg",
+      "w": 800,
+      "h": 600,
+      "alt": "Hrana — bistro / restavracija krožnik",
+      "motif": "krožnik s hrano, top-down, restavracijski kontekst",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "index.html (#sl/video — reference)"
+    },
+    {
+      "file": "video-industry-3.jpg",
+      "w": 800,
+      "h": 600,
+      "alt": "Obrtnik pri delu",
+      "motif": "obrtnik (mizar/kovinar) v delavnici, fokus na rokah",
+      "model": "soul_2",
+      "phase": "A",
+      "for": "index.html (#sl/video — reference)"
+    },
+    {
+      "file": "video-hero.jpg",
+      "w": 2400,
+      "h": 1280,
+      "alt": "AI studio za vsebine",
+      "motif": "premium produktni studio, izdelek z mehko mood svetlobo, fotografija stage",
+      "model": "nano_banana_pro",
+      "phase": "B",
+      "for": "index.html (#sl/video — hero)"
+    },
+    {
+      "file": "video-example-1.jpg",
+      "w": 800,
+      "h": 800,
+      "alt": "Primer produktnega oglasa — kozmetika",
+      "motif": "kozmetika z visok-end fotografijo, čistih barvah",
+      "model": "nano_banana_pro",
+      "phase": "B",
+      "for": "index.html (#sl/video — reference)"
+    },
+    {
+      "file": "video-example-2.jpg",
+      "w": 800,
+      "h": 800,
+      "alt": "Primer produktnega oglasa — moda",
+      "motif": "modna kombinacija, editorial slog",
+      "model": "nano_banana_pro",
+      "phase": "B",
+      "for": "index.html (#sl/video — reference)"
+    },
+    {
+      "file": "video-example-3.jpg",
+      "w": 800,
+      "h": 800,
+      "alt": "Primer produktnega oglasa — hrana",
+      "motif": "premium food shot, namizje, gourmet",
+      "model": "nano_banana_pro",
+      "phase": "B",
+      "for": "index.html (#sl/video — reference)"
+    }
+  ]
+}

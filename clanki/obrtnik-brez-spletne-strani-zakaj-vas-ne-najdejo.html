@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obrtnik brez spletne strani? Zakaj vas stranke ne najdejo — in kako to popraviti — Webnite</title>
+  <meta name="description" content="Praktični vodnik za slovenske obrtnike: zakaj brez spletne strani izgubljate stranke in kako z minimalnim budgetom začeti pravilno." />
+  <link rel="canonical" href="https://webnite.si/clanki/obrtnik-brez-spletne-strani-zakaj-vas-ne-najdejo.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Obrtnik brez spletne strani? Zakaj vas stranke ne najdejo — in kako to popraviti" />
+  <meta property="og:description" content="Praktični vodnik za slovenske obrtnike: zakaj brez spletne strani izgubljate stranke in kako z minimalnim budgetom začeti pravilno." />
+  <meta property="og:url" content="https://webnite.si/clanki/obrtnik-brez-spletne-strani-zakaj-vas-ne-najdejo.html" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/webnite-common.css" />
+  <style>
+/* === Article-specific === */
+.container-wide{max-width:1180px;margin:0 auto;padding:0 24px}
+.container{max-width:760px;margin:0 auto;padding:0 24px}
+
+/* Blog hero */
+.blog-hero{padding:64px 0 28px;text-align:center;position:relative;overflow:hidden}
+.blog-hero::before{content:"";position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(124,58,237,.06) 0%,transparent 60%);z-index:-1}
+.eyebrow-pill{display:inline-block;background:#eef0fa;color:var(--accent);font-weight:800;font-size:12px;padding:6px 16px;border-radius:99px;text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+.blog-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(34px,5.4vw,52px);line-height:1.08;color:var(--ink);margin-bottom:16px;letter-spacing:-.5px}
+.blog-hero h1 .accent{background:linear-gradient(120deg,var(--accent) 0%,var(--violet) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.blog-hero p{font-size:18px;color:var(--ink-soft);max-width:620px;margin:0 auto;line-height:1.55}
+
+/* Featured pillar */
+.featured-pillar{padding:0 0 44px}
+.featured-card{display:grid;grid-template-columns:1.1fr 1fr;background:#fff;border:1px solid var(--border);border-radius:24px;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}
+.featured-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.featured-cover{position:relative;min-height:340px;display:flex;align-items:flex-end;padding:36px;color:#fff;overflow:hidden}
+.featured-cover::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.18) 0%,transparent 50%);pointer-events:none}
+.featured-cover .cat-icon{position:absolute;top:32px;left:32px;width:48px;height:48px;background:rgba(255,255,255,.18);border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;backdrop-filter:blur(4px)}
+.featured-cover .cat-icon svg{width:24px;height:24px}
+.featured-cover .pillar-label{position:relative;z-index:1;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;background:rgba(0,0,0,.25);padding:6px 14px;border-radius:99px;display:inline-block;backdrop-filter:blur(4px)}
+.featured-body{padding:44px 44px 36px;display:flex;flex-direction:column;justify-content:center}
+.featured-body .cat-badge{display:inline-block;align-self:flex-start;font-weight:700;font-size:11.5px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:14px}
+.featured-body h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(22px,2.6vw,30px);line-height:1.2;color:var(--ink);margin-bottom:14px;letter-spacing:-.2px}
+.featured-body h2 a{color:inherit;text-decoration:none}
+.featured-body h2 a:hover{color:var(--accent)}
+.featured-body p{font-size:15.5px;color:var(--ink-soft);line-height:1.6;margin-bottom:20px}
+.featured-body .meta{font-size:13px;color:var(--ink-faint);margin-bottom:18px;display:flex;gap:18px;align-items:center}
+.featured-body .read-time{display:inline-flex;align-items:center;gap:6px}
+.featured-body .read-link{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:700;font-size:14.5px;text-decoration:none}
+.featured-body .read-link:hover{gap:12px}
+@media (max-width:780px){.featured-card{grid-template-columns:1fr}.featured-cover{min-height:200px;padding:24px}.featured-body{padding:32px 28px}.featured-cover .cat-icon{top:20px;left:20px}}
+
+/* Cards */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;padding:8px 0 60px}
+.card{background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card-cover{aspect-ratio:16/9;position:relative;color:#fff;overflow:hidden;display:flex;align-items:flex-end;padding:18px}
+.card-cover::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.2) 0%,transparent 55%);pointer-events:none}
+.card-cover .cat-icon{position:absolute;top:16px;left:16px;width:38px;height:38px;background:rgba(255,255,255,.18);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;backdrop-filter:blur(4px)}
+.card-cover .cat-icon svg{width:20px;height:20px}
+.card-cover .cover-label{position:relative;z-index:1;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;opacity:.95}
+.card-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.card-body h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:19px;line-height:1.3;margin-bottom:10px;letter-spacing:-.1px}
+.card-body h2 a{color:var(--ink);text-decoration:none}
+.card-body h2 a:hover{color:var(--accent)}
+.card-body p{font-size:14.5px;color:var(--ink-soft);line-height:1.55;margin-bottom:14px;flex:1}
+.card-meta{display:flex;justify-content:space-between;align-items:center;color:var(--ink-faint);font-size:12.5px;border-top:1px solid #f0f1f5;padding-top:14px;margin-top:auto}
+
+/* Blog CTA strip */
+.blog-cta{background:linear-gradient(120deg,var(--navy) 0%,var(--accent) 100%);color:#fff;border-radius:24px;padding:44px 36px;text-align:center;margin-bottom:64px;position:relative;overflow:hidden}
+.blog-cta::before{content:"";position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(124,58,237,.3) 0%,transparent 70%);pointer-events:none}
+.blog-cta h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:10px;position:relative}
+.blog-cta p{font-size:15.5px;opacity:.85;margin-bottom:20px;max-width:520px;margin-left:auto;margin-right:auto;position:relative}
+.blog-cta .btn-primary{background:#fff !important;color:var(--accent) !important;position:relative;text-decoration:none}
+.blog-cta .btn-primary:hover{background:#f6f7f9 !important}
+
+/* Article-specific */
+.progress-bar{position:fixed;top:var(--header-h);left:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--violet));width:0;z-index:99;transition:width .1s}
+.article-hero-bg{height:300px;display:flex;align-items:center;justify-content:center;position:relative;color:#fff;overflow:hidden}
+.article-hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.12) 0%,transparent 60%)}
+.article-hero-bg .big-icon{width:92px;height:92px;background:rgba(255,255,255,.15);border-radius:22px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);box-shadow:0 12px 40px rgba(0,0,0,.2);position:relative;z-index:1}
+.article-hero-bg .big-icon svg{width:46px;height:46px;color:#fff}
+.article-hero-bg.has-photo{height:500px;align-items:flex-end;justify-content:center;padding-bottom:36px}
+.article-hero-bg .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.article-hero-bg .hero-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.64),rgba(0,0,0,.18));z-index:1}
+.article-hero-bg .hero-overlay{position:relative;z-index:2;width:100%;max-width:760px;padding:0 24px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.article-hero-bg .hero-overlay .big-icon{position:static;width:54px;height:54px;border-radius:14px}
+.article-hero-bg .hero-overlay .big-icon svg{width:28px;height:28px}
+.article-hero-bg .hero-overlay h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(24px,3.6vw,38px);line-height:1.16;color:#fff;letter-spacing:-.3px;text-shadow:0 2px 16px rgba(0,0,0,.4);margin:0}
+@media(max-width:980px){.article-hero-bg.has-photo{height:440px}}@media(max-width:640px){.article-hero-bg.has-photo{height:340px}}
+.article-meta-bar{background:#fff;border-bottom:1px solid var(--border);padding:20px 0}
+.meta-bar-content{display:flex;flex-direction:column;gap:12px;max-width:760px;margin:0 auto;padding:0 24px}
+.meta-bar-crumbs{font-size:13px;color:var(--ink-faint)}
+.meta-bar-crumbs a{color:var(--ink-soft);text-decoration:none}
+.meta-bar-crumbs a:hover{color:var(--accent)}
+.meta-bar-cat{display:inline-block;font-weight:700;font-size:11.5px;letter-spacing:1.2px;text-transform:uppercase}
+.article-head{padding:36px 0 12px}
+.article-head h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.6vw,42px);line-height:1.12;margin-bottom:16px;color:var(--ink);letter-spacing:-.4px}
+.article-meta{font-size:13.5px;color:var(--ink-faint);display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.article-meta .dot{width:3px;height:3px;background:#cbcfd9;border-radius:50%}
+.article-meta .read-time{display:inline-flex;align-items:center;gap:6px;color:var(--ink-soft);font-weight:600}
+
+.tldr{background:#f0f4ff;border-left:4px solid var(--accent);padding:20px 24px;border-radius:0 14px 14px 0;margin:30px 0 16px}
+.tldr strong{display:block;font-size:12.5px;color:var(--accent);text-transform:uppercase;letter-spacing:1.2px;font-weight:800;margin-bottom:6px}
+.tldr p{font-size:16px;line-height:1.55;color:var(--ink)}
+.for-whom{font-size:14.5px;color:var(--ink-soft);font-style:italic;margin-bottom:34px;padding-left:18px;border-left:2px solid var(--border)}
+
+.article-body{font-size:17px;line-height:1.72;color:var(--ink)}
+.article-body h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin:42px 0 14px;color:var(--ink);letter-spacing:-.2px}
+.article-body h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;margin:28px 0 10px;color:var(--navy)}
+.article-body p{margin-bottom:14px}
+.article-body ul,.article-body ol{margin:14px 0 16px 22px}
+.article-body li{margin-bottom:7px}
+.article-body a{color:var(--accent);text-decoration:underline;text-decoration-color:rgba(68,92,228,.3);text-underline-offset:3px}
+.article-body a:hover{text-decoration-color:var(--accent)}
+.article-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:14.5px;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.article-body th{background:var(--ink);text-align:left;padding:13px 16px;font-weight:700;color:#fff;font-size:13.5px;letter-spacing:.3px}
+.article-body td{padding:13px 16px;border-bottom:1px solid #f0f1f5;vertical-align:top}
+.article-body tr:last-child td{border-bottom:0}
+.article-body tr:nth-child(odd) td{background:#fafbfc}
+
+.warn-box{background:#fff7ed;border-left:4px solid #f59e0b;padding:18px 22px;border-radius:0 14px 14px 0;margin:28px 0;display:flex;gap:12px;align-items:flex-start}
+.warn-box::before{content:"!";flex-shrink:0;width:26px;height:26px;background:#f59e0b;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;margin-top:2px}
+.warn-box-body strong{display:block;color:#b45309;text-transform:uppercase;font-size:12.5px;letter-spacing:.8px;margin-bottom:6px;font-weight:800}
+.warn-box-body p{margin-bottom:0;font-size:15.5px;color:#7c2d12;line-height:1.55}
+
+.faq-art{margin:44px 0 28px}
+.faq-art h2{margin-bottom:18px}
+.faq-art details{border:1px solid var(--border);border-radius:14px;padding:16px 22px;margin-bottom:10px;background:#fff;transition:box-shadow .2s}
+.faq-art summary{cursor:pointer;font-weight:700;font-size:15.5px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq-art summary::-webkit-details-marker{display:none}
+.faq-art summary::after{content:"+";color:var(--ink-faint);font-size:22px;line-height:1;flex-shrink:0;transition:transform .2s}
+.faq-art details[open] summary::after{content:"–";color:var(--accent)}
+.faq-art details[open]{box-shadow:0 6px 22px rgba(20,28,60,.08);border-color:#d4d8e8}
+.faq-art p{margin-top:10px;color:var(--ink-soft);font-size:15.5px;line-height:1.65}
+
+.conclusion{background:linear-gradient(120deg,var(--navy) 0%,var(--accent) 100%);color:#fff;padding:32px 32px;border-radius:20px;margin:52px 0 12px;position:relative;overflow:hidden}
+.conclusion::before{content:"";position:absolute;top:-50%;right:-10%;width:300px;height:300px;background:radial-gradient(circle,rgba(124,58,237,.3) 0%,transparent 70%);pointer-events:none}
+.conclusion h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:10px;position:relative}
+.conclusion p{opacity:.88;margin-bottom:16px;font-size:15.5px;position:relative}
+.conclusion .btn-primary{background:#fff !important;color:var(--accent) !important;position:relative;text-decoration:none}
+.conclusion .btn-primary:hover{background:#f6f7f9 !important}
+
+.related-section{margin:56px 0 24px;padding-top:36px;border-top:1px solid var(--border)}
+.related-section h4{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:1.5px;font-weight:800;margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.related-card{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none !important;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.related-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.related-card-cover{aspect-ratio:16/9;color:#fff;display:flex;align-items:flex-end;padding:14px;position:relative;overflow:hidden}
+.related-card-cover::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.2) 0%,transparent 60%)}
+.related-card-cover .cat-icon{position:absolute;top:14px;left:14px;width:32px;height:32px;background:rgba(255,255,255,.18);border-radius:8px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.related-card-cover .cat-icon svg{width:16px;height:16px}
+.related-card-body{padding:16px 18px 18px}
+.related-card-body h5{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14.5px;line-height:1.35;color:var(--ink)}
+
+.author-box{display:flex;align-items:center;gap:14px;margin-top:30px;padding:16px 22px;background:var(--bg-soft);border-radius:14px;font-size:14px;color:var(--ink-soft)}
+.author-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--violet));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;flex-shrink:0}
+.author-box strong{color:var(--ink);display:block;margin-bottom:2px}
+</style>
+</head>
+<body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html#sl/home"><span class="logo-mark" role="img" aria-label="Webnite"></span></a>
+        <nav class="nav">
+          <a class="nav-link" href="../index.html#sl/home">Domov</a>
+          <div class="dropdown">
+            <a class="nav-link" href="../index.html#sl/services">Storitve
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="../index.html#sl/web">Spletne strani</a>
+              <a href="../index.html#sl/logo">Logotipi &amp; identiteta</a>
+              <a href="../index.html#sl/ads">Oglaševanje</a>
+              <a href="../index.html#sl/video">Video in vsebine</a>
+            </div>
+          </div>
+          <a class="nav-link active" href="index.html">Članki</a>
+          <a class="nav-link" href="../index.html#sl/contact">Kontakt</a>
+        </nav>
+        <div class="header-actions">
+          <div class="lang">
+            <a class="active" href="obrtnik-brez-spletne-strani-zakaj-vas-ne-najdejo.html">SLO</a>
+            <a href="../en/tips/tradesman-without-a-website-why-customers-cant-find-you.html">ENG</a>
+          </div>
+          <a class="btn btn-primary" href="../index.html#sl/contact">Začni projekt</a>
+          <button class="hamburger" aria-label="Meni" onclick="this.closest('.site-header').querySelector('.mobile-panel').classList.toggle('open')"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+      <div class="mobile-panel">
+        <a href="../index.html#sl/home">Domov</a>
+        <a href="../index.html#sl/services">Storitve</a>
+        <a href="index.html">Članki</a>
+        <a href="../index.html#sl/contact">Kontakt</a>
+        <a href="../en/tips/tradesman-without-a-website-why-customers-cant-find-you.html">English</a>
+        <a class="btn btn-primary" href="../index.html#sl/contact">Začni projekt</a>
+      </div>
+    </header>
+
+  <div class="progress-bar" id="progress"></div>
+  <section class="article-hero">
+    <div class="article-hero-bg has-photo" style="background:linear-gradient(135deg,#445ce4 0%,#6366f1 100%);"><img class="hero-img" src="../images/clanki/obrtnik-brez-spletne-strani-1280.jpg" srcset="../images/clanki/obrtnik-brez-spletne-strani-1280.jpg 1x, ../images/clanki/obrtnik-brez-spletne-strani.jpg 2x" alt="Mizarska delovna miza z orodjem in telefonom z zemljevidom" decoding="async"><div class="hero-scrim"></div><div class="hero-overlay"><div class="big-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 12h4"/></svg></div><h1>Obrtnik brez spletne strani? Zakaj vas stranke ne najdejo — in kako to popraviti</h1></div></div>
+  </section>
+  <div class="article-meta-bar"><div class="meta-bar-content">
+    <div class="meta-bar-crumbs"><a href="../index.html">Domov</a> / <a href="index.html">Članki</a> / Obrtnik brez spletne strani? Zakaj vas stranke ne najdejo — in kako to popraviti</div>
+    <span class="meta-bar-cat" style="color:#445ce4">Spletne strani</span>
+  </div></div>
+  <article class="container">
+    <div class="article-head">
+      <p class="article-meta">
+        <span>Ekipa Webnite</span>
+        <span class="dot"></span>
+        <span>Zadnja posodobitev: junij 2026</span>
+        <span class="dot"></span>
+        <span class="read-time"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 min branja</span>
+      </p>
+    </div>
+    <div class="tldr"><strong>Kratek odgovor</strong><p>Ko nekomu poči cev, vzame telefon in tipka 'vodovodar Brežice'. Če nimate spletne strani (ali vsaj Google profila), vas Google ne pokaže — in stranka kliče konkurenco. Rešitev: 500–800 € za solidno enostransko stran + brezplačen Google Business Profile.</p></div>
+<p class="for-whom">Za obrtnika v manjšem kraju (Posavje, Štajerska, Dolenjska), ki dela predvsem prek priporočil — in se sprašuje, ali sploh potrebuje spletno stran.</p>
+<div class="article-body">
+<h2>Zakaj priporočila več niso dovolj</h2>
+
+      <p>Še pred 10 leti je obrtnik živel od priporočil — sosed je priporočil sosedi, ta sorodniku. Zdaj se to dogaja drugače: sosed pošlje sosedi povezavo do Googla, kjer je vodovodar že označen z mnenji, fotografijami dela, telefonom za klic.</p>
+      <p>Brez tega ste nevidni. Tudi če vas nekdo priporoči, stranka najprej preveri Google. Če vas ni tam — ali ste tam z eno samo nepopolno omembo — pogosto izberejo konkurenco, ki je 'bolj resna'.</p>
+    
+<h2>Minimum, ki ga potrebujete (in to je dosegljivo)</h2>
+
+      <p><strong>Google Business Profile (brezplačno).</strong> To je najprej. Naredite si profil, naložite 5–10 fotografij vašega dela, dodajte odpiralni čas, telefon, naslov. Strankam dajte povezavo, naj vas ocenijo. To je <strong>najpomembnejši brezplačen korak</strong>, ki ga ima 80 % slovenskih obrtnikov narobe.</p>
+      <p><strong>Enostavna spletna stran (500–800 €).</strong> Ne potrebujete trgovine, ne 10 podstrani. Eno samo dolgo stran, kjer piše: kaj delate, na katerem območju, vaše reference (fotografije), kontakt. To pokrije 90 % potreb obrtnika.</p>
+      <p><strong>Google My Business + osnovni SEO (vključeno v stran).</strong> Da vas Google najde, ko nekdo iz vaše bližine tipka vašo storitev.</p>
+    
+<h2>Realni primer — mizar iz Krške doline</h2>
+
+      <p>Mizar (Tomaž, 47 let) je 20 let delal prek priporočil. Leto 2025 je imel slabšo sezono — naročila so padla. Vložil je <strong>650 €</strong> v enostavno stran in 0 € v Google profil (sam ga je naredil).</p>
+      <p>Po 3 mesecih: stran ga je pripeljala 12 novih povpraševanj iz prej neznanih območij (Brežice, Sevnica, Ljubljana). Eno od njih je bila kuhinja za 4.500 €. Investicija povrnjena 7×.</p>
+      <p>Ključno: stran ni morala biti popolna, samo solidno narejena s pravim besedilom — kaj dela, kje, in kako ga doseči.</p>
+    
+<h2>Tipičen pristop obrtnika — kaj naj naredi po vrsti</h2>
+<table><thead><tr>
+<th>Korak</th>
+<th>Cena</th>
+<th>Čas</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>1.</strong> Google Business Profile</td>
+<td>Brezplačno</td>
+<td>1 ura</td>
+</tr>
+<tr>
+<td><strong>2.</strong> 5–10 fotografij dela (s telefonom)</td>
+<td>Brezplačno</td>
+<td>1 dan</td>
+</tr>
+<tr>
+<td><strong>3.</strong> Prositi 5 starih strank za oceno na Googlu</td>
+<td>Brezplačno</td>
+<td>1 teden</td>
+</tr>
+<tr>
+<td><strong>4.</strong> Enostavna spletna stran (landing page)</td>
+<td>500 – 800 €</td>
+<td>1 teden</td>
+</tr>
+<tr>
+<td><strong>5.</strong> Osnovni Google Ads (opcijsko)</td>
+<td>150 € + oglasi</td>
+<td>Po stranjavu</td>
+</tr>
+</tbody></table>
+<div class="warn-box"><div class="warn-box-body"><strong>Na kaj paziti</strong><p><strong>'Najprej naredim Facebook, stran kasneje.'</strong> Razumljivo — Facebook je brezplačen. Težava: Facebook posel zapre, profil izgine. Spletna stran je vaša last in trajna. Začnite z osnovno stranjo, Facebook dodajte zraven.</p></div></div>
+</div>
+<section class="faq-art">
+<h2>Pogosta vprašanja</h2>
+<details><summary>Ali zares rabim stran, če imam Facebook?</summary><p>Da, ker Facebook ni v Google iskalniku za poklicne storitve. 'Vodovodar v moji bližini' Google iskanje vas brez strani in Google profila ne najde.</p></details>
+<details><summary>Koliko mesečno stane vzdrževanje?</summary><p>Za enostavno obrtniško stran 10–25 € na mesec (gostovanje + domena). Vzdrževalna pogodba pri agenciji običajno ni potrebna pri tako enostavni strani.</p></details>
+<details><summary>Lahko stran naredim sam (Wix, WordPress)?</summary><p>Lahko, vendar je rezultat pogosto opazno amaterski — slabe fotografije, slabe pisave, slab tekst. 500 € pri profesionalcu pogosto izgleda 10× boljše kot 0 € sam.</p></details>
+<details><summary>Koliko časa traja, da Google strano pokaže?</summary><p>Po objavi: 1–4 tedne, da Google strane indeksira in jih pokaže v rezultatih. Z dobrim Google profilom (brezplačno) ste vidni takoj.</p></details>
+</section>
+<div class="conclusion">
+<h3>Razmišljate o prvi spletni strani za vaš obrt?</h3>
+<p>Pošljite kratko sporočilo — kaj delate, na katerem območju, kakšne fotografije imate. V 24 urah dobite ponudbo za enostavno, vendar učinkovito stran.</p>
+<a class="btn-primary" href="../index.html#sl/web">Naroči spletno stran<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+<section class="related-section">
+<h4>Sorodni članki</h4>
+<div class="related-grid">
+        <a class="related-card" href="koliko-stane-spletna-stran-v-sloveniji.html">
+          <div class="related-card-cover" style="background:linear-gradient(135deg,#445ce4 0%,#6366f1 100%);color:#fff">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 12h4"/></svg></div>
+          </div>
+          <div class="related-card-body"><h5>Koliko stane spletna stran v Sloveniji</h5></div>
+        </a>
+        <a class="related-card" href="5-znakov-da-spletna-stran-izgublja-stranke.html">
+          <div class="related-card-cover" style="background:linear-gradient(135deg,#445ce4 0%,#6366f1 100%);color:#fff">
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 12h4"/></svg></div>
+          </div>
+          <div class="related-card-body"><h5>5 znakov, da vaša spletna stran izgublja stranke</h5></div>
+        </a>
+</div></section>
+<div class="author-box"><div class="author-avatar">EW</div><div><strong>Ekipa Webnite</strong>junij 2026</div></div>
+  </article>
+  <script>
+    (function(){
+      var p=document.getElementById('progress');
+      function tick(){
+        var h=document.documentElement, b=document.body;
+        var st=h.scrollTop||b.scrollTop;
+        var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
+        p.style.width=(sh>0?(st/sh*100):0)+'%';
+      }
+      window.addEventListener('scroll',tick,{passive:true});tick();
+    })();
+  </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Obrtnik brez spletne strani? Zakaj vas stranke ne najdejo — in kako to popraviti", "description": "Praktični vodnik za slovenske obrtnike: zakaj brez spletne strani izgubljate stranke in kako z minimalnim budgetom začeti pravilno.", "author": {"@type": "Organization", "name": "Ekipa Webnite", "url": "https://webnite.si"}, "publisher": {"@type": "Organization", "name": "Webnite", "logo": {"@type": "ImageObject", "url": "https://webnite.si/favicon-96x96.png"}}, "datePublished": "2026-05-28", "dateModified": "2026-05-28", "mainEntityOfPage": "https://webnite.si/clanki/obrtnik-brez-spletne-strani-zakaj-vas-ne-najdejo.html"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Ali zares rabim stran, če imam Facebook?", "acceptedAnswer": {"@type": "Answer", "text": "Da, ker Facebook ni v Google iskalniku za poklicne storitve. 'Vodovodar v moji bližini' Google iskanje vas brez strani in Google profila ne najde."}}, {"@type": "Question", "name": "Koliko mesečno stane vzdrževanje?", "acceptedAnswer": {"@type": "Answer", "text": "Za enostavno obrtniško stran 10–25 € na mesec (gostovanje + domena). Vzdrževalna pogodba pri agenciji običajno ni potrebna pri tako enostavni strani."}}, {"@type": "Question", "name": "Lahko stran naredim sam (Wix, WordPress)?", "acceptedAnswer": {"@type": "Answer", "text": "Lahko, vendar je rezultat pogosto opazno amaterski — slabe fotografije, slabe pisave, slab tekst. 500 € pri profesionalcu pogosto izgleda 10× boljše kot 0 € sam."}}, {"@type": "Question", "name": "Koliko časa traja, da Google strano pokaže?", "acceptedAnswer": {"@type": "Answer", "text": "Po objavi: 1–4 tedne, da Google strane indeksira in jih pokaže v rezultatih. Z dobrim Google profilom (brezplačno) ste vidni takoj."}}]}</script>
+
+  <footer class="site-footer"><div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Webnite / Automotion d.o.o.</p>
+      <span class="footer-legal">
+        <a href="../index.html#sl/privacy">Politika zasebnosti</a>
+        <a href="../index.html#sl/cookies">Politika piškotkov</a>
+        <a href="../index.html#sl/pogoji-poslovanja">Splošni pogoji</a>
+        <a href="../index.html#sl/pogoji-uporabe">Pogoji uporabe</a>
+      </span>
+    </div>
+  </div></footer>
+</body></html>

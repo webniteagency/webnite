@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Članki — Webnite</title>
+  <meta name="description" content="Praktični članki o digitalnem marketingu za slovenske podjetnike — brez ovinkov, s pravimi cenami." />
+  <link rel="canonical" href="https://webnite.si/clanki/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Članki" />
+  <meta property="og:description" content="Praktični članki o digitalnem marketingu za slovenske podjetnike — brez ovinkov, s pravimi cenami." />
+  <meta property="og:url" content="https://webnite.si/clanki/" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/webnite-common.css" />
+  <style>
+/* === Article-specific === */
+.container-wide{max-width:1180px;margin:0 auto;padding:0 24px}
+.container{max-width:760px;margin:0 auto;padding:0 24px}
+
+/* Blog hero */
+.blog-hero{padding:64px 0 28px;text-align:center;position:relative;overflow:hidden}
+.blog-hero::before{content:"";position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(124,58,237,.06) 0%,transparent 60%);z-index:-1}
+.eyebrow-pill{display:inline-block;background:#eef0fa;color:var(--accent);font-weight:800;font-size:12px;padding:6px 16px;border-radius:99px;text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+.blog-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(34px,5.4vw,52px);line-height:1.08;color:var(--ink);margin-bottom:16px;letter-spacing:-.5px}
+.blog-hero h1 .accent{background:linear-gradient(120deg,var(--accent) 0%,var(--violet) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.blog-hero p{font-size:18px;color:var(--ink-soft);max-width:620px;margin:0 auto;line-height:1.55}
+
+/* Featured pillar */
+.featured-pillar{padding:0 0 44px}
+.featured-card{display:grid;grid-template-columns:1.1fr 1fr;background:#fff;border:1px solid var(--border);border-radius:24px;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}
+.featured-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.featured-cover{position:relative;min-height:340px;display:flex;align-items:flex-end;padding:36px;color:#fff;overflow:hidden}
+.featured-cover::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.18) 0%,transparent 50%);pointer-events:none}
+.featured-cover .cat-icon{position:absolute;top:32px;left:32px;width:48px;height:48px;background:rgba(255,255,255,.18);border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;backdrop-filter:blur(4px)}
+.featured-cover .cat-icon svg{width:24px;height:24px}
+.featured-cover .pillar-label{position:relative;z-index:1;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;background:rgba(0,0,0,.25);padding:6px 14px;border-radius:99px;display:inline-block;backdrop-filter:blur(4px)}
+.featured-body{padding:44px 44px 36px;display:flex;flex-direction:column;justify-content:center}
+.featured-body .cat-badge{display:inline-block;align-self:flex-start;font-weight:700;font-size:11.5px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:14px}
+.featured-body h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(22px,2.6vw,30px);line-height:1.2;color:var(--ink);margin-bottom:14px;letter-spacing:-.2px}
+.featured-body h2 a{color:inherit;text-decoration:none}
+.featured-body h2 a:hover{color:var(--accent)}
+.featured-body p{font-size:15.5px;color:var(--ink-soft);line-height:1.6;margin-bottom:20px}
+.featured-body .meta{font-size:13px;color:var(--ink-faint);margin-bottom:18px;display:flex;gap:18px;align-items:center}
+.featured-body .read-time{display:inline-flex;align-items:center;gap:6px}
+.featured-body .read-link{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:700;font-size:14.5px;text-decoration:none}
+.featured-body .read-link:hover{gap:12px}
+@media (max-width:780px){.featured-card{grid-template-columns:1fr}.featured-cover{min-height:200px;padding:24px}.featured-body{padding:32px 28px}.featured-cover .cat-icon{top:20px;left:20px}}
+
+/* Cards */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:8px 0 60px;align-items:start}
+.blog-grid>.featured-card{grid-column:span 2}
+@media (max-width:780px){.blog-grid{grid-template-columns:1fr}.blog-grid>.featured-card{grid-column:auto}}
+.card{background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card-cover{aspect-ratio:16/9;position:relative;color:#fff;overflow:hidden;display:flex;align-items:flex-end;padding:18px}
+.card-cover::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.2) 0%,transparent 55%);pointer-events:none}
+.card-cover .cat-icon{position:absolute;top:16px;left:16px;width:38px;height:38px;background:rgba(255,255,255,.18);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;backdrop-filter:blur(4px)}
+.card-cover .cat-icon svg{width:20px;height:20px}
+.card-cover .cover-label{position:relative;z-index:1;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;opacity:.95}
+/* photo covers: image background + dark scrim for white-text legibility, badges/icons above */
+.card-cover .cover-img,.featured-cover .cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.card-cover .cover-scrim,.featured-cover .cover-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),rgba(0,0,0,.10));z-index:1;pointer-events:none}
+.card-cover::after,.featured-cover::after{z-index:1}
+.card-cover .cat-icon,.card-cover .cover-label,.featured-cover .cat-icon,.featured-cover .pillar-label{z-index:2}
+/* remove templated corner icons (keep the text category badge) */
+.card-cover .cat-icon,.featured-cover .cat-icon{display:none}
+/* equal-height grid cards — excludes featured pillar + first featured card (koliko) */
+.blog-grid>.card:nth-child(n+3) .card-body h2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.55em}
+.blog-grid>.card:nth-child(n+3) .card-body p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:4.6em;margin-bottom:14px}
+.card-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.card-body h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:19px;line-height:1.3;margin-bottom:10px;letter-spacing:-.1px}
+.card-body h2 a{color:var(--ink);text-decoration:none}
+.card-body h2 a:hover{color:var(--accent)}
+.card-body p{font-size:14.5px;color:var(--ink-soft);line-height:1.55;margin-bottom:14px;flex:1}
+.card-meta{display:flex;justify-content:space-between;align-items:center;color:var(--ink-faint);font-size:12.5px;border-top:1px solid #f0f1f5;padding-top:14px;margin-top:auto}
+/* Wide secondary feature card — balances the grid (6 uniform cards stay 3+3) */
+.blog-grid .card-wide{grid-column:1 / -1;flex-direction:row;align-items:stretch}
+.card-wide .card-cover{aspect-ratio:auto;width:42%;min-height:230px;flex-shrink:0;padding:22px}
+.card-wide .card-body{justify-content:center;padding:30px 36px 32px}
+.card-wide .card-body h2{font-size:23px;line-height:1.25}
+.card-wide .card-body p{font-size:15.5px}
+@media(max-width:760px){.blog-grid .card-wide{flex-direction:column}.card-wide .card-cover{width:auto;aspect-ratio:16/9;min-height:0;padding:18px}.card-wide .card-body{padding:22px 24px 26px}.card-wide .card-body h2{font-size:19px}}
+
+/* Blog CTA strip */
+.blog-cta{background:linear-gradient(120deg,var(--navy) 0%,var(--accent) 100%);color:#fff;border-radius:24px;padding:44px 36px;text-align:center;margin-bottom:64px;position:relative;overflow:hidden}
+.blog-cta::before{content:"";position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(124,58,237,.3) 0%,transparent 70%);pointer-events:none}
+.blog-cta h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:10px;position:relative}
+.blog-cta p{font-size:15.5px;opacity:.85;margin-bottom:20px;max-width:520px;margin-left:auto;margin-right:auto;position:relative}
+.blog-cta .btn-primary{background:#fff !important;color:var(--accent) !important;position:relative;text-decoration:none}
+.blog-cta .btn-primary:hover{background:#f6f7f9 !important}
+
+/* Article-specific */
+.progress-bar{position:fixed;top:var(--header-h);left:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--violet));width:0;z-index:99;transition:width .1s}
+.article-hero-bg{height:300px;display:flex;align-items:center;justify-content:center;position:relative;color:#fff;overflow:hidden}
+.article-hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.12) 0%,transparent 60%)}
+.article-hero-bg .big-icon{width:92px;height:92px;background:rgba(255,255,255,.15);border-radius:22px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);box-shadow:0 12px 40px rgba(0,0,0,.2);position:relative;z-index:1}
+.article-hero-bg .big-icon svg{width:46px;height:46px;color:#fff}
+.article-meta-bar{background:#fff;border-bottom:1px solid var(--border);padding:20px 0}
+.meta-bar-content{display:flex;flex-direction:column;gap:12px;max-width:760px;margin:0 auto;padding:0 24px}
+.meta-bar-crumbs{font-size:13px;color:var(--ink-faint)}
+.meta-bar-crumbs a{color:var(--ink-soft);text-decoration:none}
+.meta-bar-crumbs a:hover{color:var(--accent)}
+.meta-bar-cat{display:inline-block;font-weight:700;font-size:11.5px;letter-spacing:1.2px;text-transform:uppercase}
+.article-head{padding:36px 0 12px}
+.article-head h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,4.6vw,42px);line-height:1.12;margin-bottom:16px;color:var(--ink);letter-spacing:-.4px}
+.article-meta{font-size:13.5px;color:var(--ink-faint);display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.article-meta .dot{width:3px;height:3px;background:#cbcfd9;border-radius:50%}
+.article-meta .read-time{display:inline-flex;align-items:center;gap:6px;color:var(--ink-soft);font-weight:600}
+
+.tldr{background:#f0f4ff;border-left:4px solid var(--accent);padding:20px 24px;border-radius:0 14px 14px 0;margin:30px 0 16px}
+.tldr strong{display:block;font-size:12.5px;color:var(--accent);text-transform:uppercase;letter-spacing:1.2px;font-weight:800;margin-bottom:6px}
+.tldr p{font-size:16px;line-height:1.55;color:var(--ink)}
+.for-whom{font-size:14.5px;color:var(--ink-soft);font-style:italic;margin-bottom:34px;padding-left:18px;border-left:2px solid var(--border)}
+
+.article-body{font-size:17px;line-height:1.72;color:var(--ink)}
+.article-body h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin:42px 0 14px;color:var(--ink);letter-spacing:-.2px}
+.article-body h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:20px;margin:28px 0 10px;color:var(--navy)}
+.article-body p{margin-bottom:14px}
+.article-body ul,.article-body ol{margin:14px 0 16px 22px}
+.article-body li{margin-bottom:7px}
+.article-body a{color:var(--accent);text-decoration:underline;text-decoration-color:rgba(68,92,228,.3);text-underline-offset:3px}
+.article-body a:hover{text-decoration-color:var(--accent)}
+.article-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:14.5px;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.article-body th{background:var(--ink);text-align:left;padding:13px 16px;font-weight:700;color:#fff;font-size:13.5px;letter-spacing:.3px}
+.article-body td{padding:13px 16px;border-bottom:1px solid #f0f1f5;vertical-align:top}
+.article-body tr:last-child td{border-bottom:0}
+.article-body tr:nth-child(odd) td{background:#fafbfc}
+
+.warn-box{background:#fff7ed;border-left:4px solid #f59e0b;padding:18px 22px;border-radius:0 14px 14px 0;margin:28px 0;display:flex;gap:12px;align-items:flex-start}
+.warn-box::before{content:"!";flex-shrink:0;width:26px;height:26px;background:#f59e0b;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;margin-top:2px}
+.warn-box-body strong{display:block;color:#b45309;text-transform:uppercase;font-size:12.5px;letter-spacing:.8px;margin-bottom:6px;font-weight:800}
+.warn-box-body p{margin-bottom:0;font-size:15.5px;color:#7c2d12;line-height:1.55}
+
+.faq-art{margin:44px 0 28px}
+.faq-art h2{margin-bottom:18px}
+.faq-art details{border:1px solid var(--border);border-radius:14px;padding:16px 22px;margin-bottom:10px;background:#fff;transition:box-shadow .2s}
+.faq-art summary{cursor:pointer;font-weight:700;font-size:15.5px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq-art summary::-webkit-details-marker{display:none}
+.faq-art summary::after{content:"+";color:var(--ink-faint);font-size:22px;line-height:1;flex-shrink:0;transition:transform .2s}
+.faq-art details[open] summary::after{content:"–";color:var(--accent)}
+.faq-art details[open]{box-shadow:0 6px 22px rgba(20,28,60,.08);border-color:#d4d8e8}
+.faq-art p{margin-top:10px;color:var(--ink-soft);font-size:15.5px;line-height:1.65}
+
+.conclusion{background:linear-gradient(120deg,var(--navy) 0%,var(--accent) 100%);color:#fff;padding:32px 32px;border-radius:20px;margin:52px 0 12px;position:relative;overflow:hidden}
+.conclusion::before{content:"";position:absolute;top:-50%;right:-10%;width:300px;height:300px;background:radial-gradient(circle,rgba(124,58,237,.3) 0%,transparent 70%);pointer-events:none}
+.conclusion h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:10px;position:relative}
+.conclusion p{opacity:.88;margin-bottom:16px;font-size:15.5px;position:relative}
+.conclusion .btn-primary{background:#fff !important;color:var(--accent) !important;position:relative;text-decoration:none}
+.conclusion .btn-primary:hover{background:#f6f7f9 !important}
+
+.related-section{margin:56px 0 24px;padding-top:36px;border-top:1px solid var(--border)}
+.related-section h4{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:1.5px;font-weight:800;margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.related-card{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none !important;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.related-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.related-card-cover{aspect-ratio:16/9;color:#fff;display:flex;align-items:flex-end;padding:14px;position:relative;overflow:hidden}
+.related-card-cover::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.2) 0%,transparent 60%)}
+.related-card-cover .cat-icon{position:absolute;top:14px;left:14px;width:32px;height:32px;background:rgba(255,255,255,.18);border-radius:8px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.related-card-cover .cat-icon svg{width:16px;height:16px}
+.related-card-body{padding:16px 18px 18px}
+.related-card-body h5{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14.5px;line-height:1.35;color:var(--ink)}
+
+.author-box{display:flex;align-items:center;gap:14px;margin-top:30px;padding:16px 22px;background:var(--bg-soft);border-radius:14px;font-size:14px;color:var(--ink-soft)}
+.author-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--violet));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;flex-shrink:0}
+.author-box strong{color:var(--ink);display:block;margin-bottom:2px}
+</style>
+</head>
+<body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html#sl/home"><span class="logo-mark" role="img" aria-label="Webnite"></span></a>
+        <nav class="nav">
+          <a class="nav-link" href="../index.html#sl/home">Domov</a>
+          <div class="dropdown">
+            <a class="nav-link" href="../index.html#sl/services">Storitve
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="../index.html#sl/web">Spletne strani</a>
+              <a href="../index.html#sl/logo">Logotipi &amp; identiteta</a>
+              <a href="../index.html#sl/ads">Oglaševanje</a>
+              <a href="../index.html#sl/video">Video in vsebine</a>
+            </div>
+          </div>
+          <a class="nav-link active" href="index.html">Članki</a>
+          <a class="nav-link" href="../index.html#sl/contact">Kontakt</a>
+        </nav>
+        <div class="header-actions">
+          <div class="lang">
+            <a class="active" href="index.html">SLO</a>
+            <a href="../en/tips/index.html">ENG</a>
+          </div>
+          <a class="btn btn-primary" href="../index.html#sl/contact">Začni projekt</a>
+          <button class="hamburger" aria-label="Meni" onclick="this.closest('.site-header').querySelector('.mobile-panel').classList.toggle('open')"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+      <div class="mobile-panel">
+        <a href="../index.html#sl/home">Domov</a>
+        <a href="../index.html#sl/services">Storitve</a>
+        <a href="index.html">Članki</a>
+        <a href="../index.html#sl/contact">Kontakt</a>
+        <a href="../en/tips/index.html">English</a>
+        <a class="btn btn-primary" href="../index.html#sl/contact">Začni projekt</a>
+      </div>
+    </header>
+  <section class="blog-hero">
+    <div class="container-wide">
+      <span class="eyebrow-pill">ČLANKI</span>
+      <h1>Digitalni marketing<br><span class="accent">brez ovinkov.</span></h1>
+      <p>Razložimo digitalni marketing kot prijatelju ob kavi. Brez žargona, brez napihovanja, s pravimi slovenskimi cenami in praktičnimi primeri.</p>
+    </div>
+  </section>
+  <main class="container-wide">
+    <section class="blog-grid">
+      <article class="featured-card">
+        <a href="./transparenten-vodnik-po-cenah-digitalnega-marketinga-2026.html" style="text-decoration:none"><div style="background:linear-gradient(135deg,#10b981 0%,#34d399 100%);" class="featured-cover"><img class="cover-img" src="../images/clanki/cene-digitalnega-marketinga-2026-1280.jpg" srcset="../images/clanki/cene-digitalnega-marketinga-2026-1280.jpg 1x, ../images/clanki/cene-digitalnega-marketinga-2026.jpg 2x" alt="Delovna miza s prenosnikom, kalkulatorjem in evrskimi bankovci" loading="lazy" decoding="async"><div class="cover-scrim"></div>
+      <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M14.5 8h-4a2 2 0 1 0 0 4h3a2 2 0 1 1 0 4h-4M12 6v2M12 16v2"/></svg></div>
+    </div></a>
+        <div class="featured-body">
+          <span class="cat-badge" style="color:#047857">Cene</span>
+          <h2><a href="./transparenten-vodnik-po-cenah-digitalnega-marketinga-2026.html">Transparenten vodnik po cenah digitalnega marketinga v Sloveniji 2026</a></h2>
+          <p>Realne cene vseh digitalnih storitev v Sloveniji 2026 — od spletne strani do oglaševanja in vsebine. Brez napihovanja, z razlago.</p>
+          <div class="meta">
+            <span class="read-time"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>2 min branja</span>
+          </div>
+          <a class="read-link" href="./transparenten-vodnik-po-cenah-digitalnega-marketinga-2026.html">Preberi celoten članek<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="card">
+        <a href="./koliko-stane-spletna-stran-v-sloveniji.html" style="text-decoration:none"><div style="background:linear-gradient(135deg,#445ce4 0%,#6366f1 100%);" class="card-cover"><img class="cover-img" src="../images/clanki/koliko-stane-spletna-stran-1280.jpg" srcset="../images/clanki/koliko-stane-spletna-stran-1280.jpg 1x, ../images/clanki/koliko-stane-spletna-stran.jpg 2x" alt="Delovna miza spletnega oblikovalca z monitorjem in skicami" loading="lazy" decoding="async"><div class="cover-scrim"></div>
+      <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 12h4"/></svg></div>
+      <span class="cover-label">SPLETNE STRANI</span>
+    </div></a>
+        <div class="card-body">
+          <h2><a href="./koliko-stane-spletna-stran-v-sloveniji.html">Koliko v resnici stane spletna stran v Sloveniji (in zakaj se cene tako razlikujejo)</a></h2>
+          <p>Realne cene spletnih strani v Sloveniji 2026: od preprostih predstavitvenih strani do trgovin. Kaj vpliva na ceno in kje pretirano plačaš.</p>
+          <div class="card-meta">
+            <span style="color:#445ce4;font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-size:11px">Spletne strani</span>
+            <span>3 min branja · junij 2026</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <a href="./logotip-50-ali-500-eur-kaj-dobis.html" style="text-decoration:none"><div style="background:linear-gradient(135deg,#7c3aed 0%,#a78bfa 100%);" class="card-cover"><img class="cover-img" src="../images/clanki/logotip-50-ali-500-1280.jpg" srcset="../images/clanki/logotip-50-ali-500-1280.jpg 1x, ../images/clanki/logotip-50-ali-500.jpg 2x" alt="Oblikovalska miza s skicami logotipov in barvnimi vzorci" loading="lazy" decoding="async"><div class="cover-scrim"></div>
+      <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M9 9l6 6M15 9l-6 6"/></svg></div>
+      <span class="cover-label">LOGOTIPI</span>
+    </div></a>
+        <div class="card-body">
+          <h2><a href="./logotip-50-ali-500-eur-kaj-dobis.html">Logotip za 50 € ali 500 €: kaj dejansko dobiš za ceno</a></h2>
+          <p>Razlika med poceni in solidnim logotipom v Sloveniji 2026. Kdaj je 50 € dovolj, kdaj moraš plačati več in zakaj.</p>
+          <div class="card-meta">
+            <span style="color:#7c3aed;font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-size:11px">Logotipi</span>
+            <span>3 min branja · junij 2026</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <a href="./google-ali-meta-oglasi-kateri-so-pravi.html" style="text-decoration:none"><div style="background:linear-gradient(135deg,#f59e0b 0%,#fbbf24 100%);" class="card-cover"><img class="cover-img" src="../images/clanki/google-ali-meta-oglasi-1280.jpg" srcset="../images/clanki/google-ali-meta-oglasi-1280.jpg 1x, ../images/clanki/google-ali-meta-oglasi.jpg 2x" alt="Prenosnik in telefon z oglaševalsko analitiko na mizi" loading="lazy" decoding="async"><div class="cover-scrim"></div>
+      <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6-4v8zM9 8l8-4v16l-8-4M17 4l4 8-4 8"/></svg></div>
+      <span class="cover-label">OGLAŠEVANJE</span>
+    </div></a>
+        <div class="card-body">
+          <h2><a href="./google-ali-meta-oglasi-kateri-so-pravi.html">Google ali Meta oglasi: kateri so pravi za moje podjetje?</a></h2>
+          <p>Razlika med Google in Meta oglasi z realnimi primeri iz Slovenije. Kdaj izbrati katerega in koliko proračuna potrebuješ.</p>
+          <div class="card-meta">
+            <span style="color:#b45309;font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-size:11px">Oglaševanje</span>
+            <span>3 min branja · junij 2026</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <a href="./zakaj-vas-oglas-ne-prodaja.html" style="text-decoration:none"><div style="background:linear-gradient(135deg,#ec4899 0%,#f472b6 100%);" class="card-cover"><img class="cover-img" src="../images/clanki/zakaj-oglas-ne-prodaja-1280.jpg" srcset="../images/clanki/zakaj-oglas-ne-prodaja-1280.jpg 1x, ../images/clanki/zakaj-oglas-ne-prodaja.jpg 2x" alt="Velik prazen jumbo plakat ob mestni ulici v mraku" loading="lazy" decoding="async"><div class="cover-scrim"></div>
+      <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="14" height="12" rx="2"/><path d="M17 10l4-2v8l-4-2z"/></svg></div>
+      <span class="cover-label">VIDEO IN VSEBINE</span>
+    </div></a>
+        <div class="card-body">
+          <h2><a href="./zakaj-vas-oglas-ne-prodaja.html">Zakaj vaš oglas ne prodaja (in skoraj nikoli ni kriv budget)</a></h2>
+          <p>5 pravih razlogov, zakaj oglasi ne delujejo — in zakaj povečevanje proračuna običajno ne pomaga. Praktični vodnik za male slovenske posle.</p>
+          <div class="card-meta">
+            <span style="color:#be185d;font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-size:11px">Video in vsebine</span>
+            <span>3 min branja · junij 2026</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <a href="./video-oglasi-brez-snemalne-ekipe.html" style="text-decoration:none"><div style="background:linear-gradient(135deg,#ec4899 0%,#f472b6 100%);" class="card-cover"><img class="cover-img" src="../images/clanki/video-oglasi-brez-snemalne-ekipe-1280.jpg" srcset="../images/clanki/video-oglasi-brez-snemalne-ekipe-1280.jpg 1x, ../images/clanki/video-oglasi-brez-snemalne-ekipe.jpg 2x" alt="Namizni studio za snemanje video oglasa s telefonom in ring lučjo" loading="lazy" decoding="async"><div class="cover-scrim"></div>
+      <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="14" height="12" rx="2"/><path d="M17 10l4-2v8l-4-2z"/></svg></div>
+      <span class="cover-label">VIDEO</span>
+    </div></a>
+        <div class="card-body">
+          <h2><a href="./video-oglasi-brez-snemalne-ekipe.html">Video oglasi brez snemalne ekipe: kako sodobna produkcija spremeni ceno in hitrost</a></h2>
+          <p>Kako AI in sodobna orodja omogočajo profesionalne video oglase brez snemalne ekipe — desetkrat ceneje in hitreje. Realni primeri iz Slovenije.</p>
+          <div class="card-meta">
+            <span style="color:#be185d;font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-size:11px">Video</span>
+            <span>3 min branja · junij 2026</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <a href="./5-znakov-da-spletna-stran-izgublja-stranke.html" style="text-decoration:none"><div style="background:linear-gradient(135deg,#445ce4 0%,#6366f1 100%);" class="card-cover"><img class="cover-img" src="../images/clanki/5-znakov-spletna-stran-izgublja-stranke-1280.jpg" srcset="../images/clanki/5-znakov-spletna-stran-izgublja-stranke-1280.jpg 1x, ../images/clanki/5-znakov-spletna-stran-izgublja-stranke.jpg 2x" alt="Prenosnik s spletno stranjo in lupa na natisnjenih grafih" loading="lazy" decoding="async"><div class="cover-scrim"></div>
+      <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 12h4"/></svg></div>
+      <span class="cover-label">SPLETNE STRANI</span>
+    </div></a>
+        <div class="card-body">
+          <h2><a href="./5-znakov-da-spletna-stran-izgublja-stranke.html">5 znakov, da vaša spletna stran izgublja stranke</a></h2>
+          <p>Najpogostejši razlogi, zakaj obiskovalci spletne strani ne postanejo stranke. Konkretne stvari, ki jih preveriš še danes.</p>
+          <div class="card-meta">
+            <span style="color:#445ce4;font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-size:11px">Spletne strani</span>
+            <span>2 min branja · junij 2026</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <a href="./obrtnik-brez-spletne-strani-zakaj-vas-ne-najdejo.html" style="text-decoration:none"><div style="background:linear-gradient(135deg,#445ce4 0%,#6366f1 100%);" class="card-cover"><img class="cover-img" src="../images/clanki/obrtnik-brez-spletne-strani-1280.jpg" srcset="../images/clanki/obrtnik-brez-spletne-strani-1280.jpg 1x, ../images/clanki/obrtnik-brez-spletne-strani.jpg 2x" alt="Mizarska delovna miza z orodjem in telefonom z zemljevidom" loading="lazy" decoding="async"><div class="cover-scrim"></div>
+      <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 12h4"/></svg></div>
+      <span class="cover-label">SPLETNE STRANI</span>
+    </div></a>
+        <div class="card-body">
+          <h2><a href="./obrtnik-brez-spletne-strani-zakaj-vas-ne-najdejo.html">Obrtnik brez spletne strani? Zakaj vas stranke ne najdejo — in kako to popraviti</a></h2>
+          <p>Praktični vodnik za slovenske obrtnike: zakaj brez spletne strani izgubljaš stranke in kako z minimalnim proračunom začeti pravilno.</p>
+          <div class="card-meta">
+            <span style="color:#445ce4;font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-size:11px">Spletne strani</span>
+            <span>3 min branja · junij 2026</span>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="blog-cta">
+      <h3>Imate konkretno vprašanje?</h3>
+      <p>Ne najdete odgovora med članki? Pišite nam — odgovorimo v 24 urah, brezplačno.</p>
+      <a class="btn-primary" href="../index.html#sl/contact">Pišite nam<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Webnite / Automotion d.o.o.</p>
+      <span class="footer-legal">
+        <a href="../index.html#sl/privacy">Politika zasebnosti</a>
+        <a href="../index.html#sl/cookies">Politika piškotkov</a>
+        <a href="../index.html#sl/pogoji-poslovanja">Splošni pogoji</a>
+        <a href="../index.html#sl/pogoji-uporabe">Pogoji uporabe</a>
+      </span>
+    </div>
+  </div></footer>
+</body></html>
